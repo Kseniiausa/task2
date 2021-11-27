@@ -7,8 +7,6 @@ import org.testng.annotations.BeforeTest;
 public class WebDriverSingleton {
 
     public static WebDriver driver;
-
-    @BeforeTest
     public static WebDriver getInstance() {
         if (driver == null) {
             driver = new ChromeDriver();
